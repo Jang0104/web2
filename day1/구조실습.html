@@ -1,0 +1,156 @@
+%
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구조실습</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(255, 211, 231);
+            padding: 16px 32px;
+            align-items: center;
+        }
+
+        .header_menu {
+            display: block;
+            list-style: none;
+        }
+
+        .header_menu>li {
+            margin: 16px;
+        }
+
+        .header_menu>li>a {
+            color: rgb(255, 211, 231);
+            text-decoration: none;
+            padding: 16px;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+
+        .news_article {
+            border: 1px solid rgb(255, 211, 231);
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            display: flex;
+        }
+
+        .content_section {
+            width: 70%;
+        }
+
+        .aside {
+            width: 30%;
+        }
+
+        footer {
+            height: 20%;
+            background-color: rgb(255, 211, 231);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>LOGO</h1>
+        <nav>
+            <ul class="header_menu">
+                <li>
+                    <a href="#">
+                        menu1
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        menu2
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        menu3
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content_section">
+            <article class="news_article">
+                <h2>옆집에 고양이가 침입했다!</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore ad, nihil fuga error iusto quas
+                    cumque at repellat voluptates excepturi esse, saepe dolorem inventore dolores id. Dolore et tempora
+                    minus?</p>
+            </article>
+
+            <article class="news_article">
+                <h2>바다에서 쉬고있는 점박이물범!</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore ad, nihil fuga error iusto quas
+                    cumque at repellat voluptates excepturi esse, saepe dolorem inventore dolores id. Dolore et tempora
+                    minus?</p>
+            </article>
+
+            <article class="news_article">
+                <h2>건강을 지키는 생활습관 10가지</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore ad, nihil fuga error iusto quas
+                    cumque at repellat voluptates excepturi esse, saepe dolorem inventore dolores id. Dolore et tempora
+                    minus?</p>
+            </article>
+            <article class="news_article">
+                <h2>아이돌커플탄생?!</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore ad, nihil fuga error iusto quas
+                    cumque at repellat voluptates excepturi esse, saepe dolorem inventore dolores id. Dolore et tempora
+                    minus?</p>
+
+            </article>
+
+            <article class="news_article">
+                <h2>종합영양제 과연 효과있을까?</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore ad, nihil fuga error iusto quas
+                    cumque at repellat voluptates excepturi esse, saepe dolorem inventore dolores id. Dolore et tempora
+                    minus?</p>
+
+            </article>
+
+            <article class="news_article">
+                <h2>월요일 직장인 피로도 99%라는 연구결과</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore ad, nihil fuga error iusto quas
+                    cumque at repellat voluptates excepturi esse, saepe dolorem inventore dolores id. Dolore et tempora
+                    minus?</p>
+
+            </article>
+        </section>
+
+        <aside class="aside">
+            <h3>Right aside</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ipsum architecto nemo voluptates vel
+                iste, commodi dolorem eaque voluptas officia sed natus non illum atque nesciunt corrupti doloribus
+                eveniet. Natus?</p>
+            <div class="user_form">
+                <input type="text" placeholder="이름 입력">
+                <button type="submit">제출</button>
+            </div>
+            <div class="ppl"></div>
+            <h3></h3>
+        </aside>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
