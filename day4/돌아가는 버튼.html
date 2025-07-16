@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>돌아가는 버튼</title>
+    <script src="https://kit.fontawesome.com/de408464a5.js" crossorigin="anonymous"></script>
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 50px;
+            background-color: rgb(57, 86, 17);
+            color: white;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            gap: 32px;
+        }
+
+        button {
+            background: none;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        .btn_box > button:hover i {
+            animation-name: plus_to_close;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes plus_to_close {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(-225deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="LOGO">
+            LOGO
+        </h1>
+        <ul class="menu">
+            <li>메뉴1</li>
+            <li>메뉴2</li>
+            <li>메뉴3</li>
+            <li>메뉴4</li>
+        </ul>
+        <div class="">
+            <button>
+
+            </button>
+        </div>
+    </header>
+</body>
+
+</html>

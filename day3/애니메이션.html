@@ -14,10 +14,9 @@
             animation-iteration-count: 1;
             animation-fill-mode: forwards; */
 
-            /* animation: name이름 duration지속시간 timing-fuction타이밍함수 delay대기시간 
-            interacion-count반복횟수 fill-mode전후상태 play-state재생/; */
+            /* animation: name이름 duration지속시간 timing-function타이밍함수 delay대기시간 interaction-count반복횟수 direction방향 fill-mode전후상태 play-state재생/정지; */
 
-            animation: boxAnimation 5s linear 1s ;
+            animation: boxAnimation2 5s linear 1s 1 forwards;
         }
 
         .box:nth-child(1){
@@ -52,16 +51,25 @@
             from {
                 width: 200px;
             }
+
         to {
             width: 500px;
         }
     }
+    
         @keyframes boxAnimation2 {
-            10% {
+             10% {
+                width: 50px;
+            }
 
+            50% {
+                width: 500px;
+            }
+
+            100% {
+                width: 200px;
             }
         }
-
     </style>
 </head>
 <body>
