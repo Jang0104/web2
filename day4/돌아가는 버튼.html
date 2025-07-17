@@ -7,6 +7,11 @@
     <title>돌아가는 버튼</title>
     <script src="https://kit.fontawesome.com/de408464a5.js" crossorigin="anonymous"></script>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
         header {
             display: flex;
             justify-content: space-between;
@@ -30,7 +35,7 @@
             font-size: 20px;
         }
 
-        .btn_box > button:hover i {
+        .btn_box>button:hover i {
             animation-name: plus_to_close;
             animation-duration: 1s;
             animation-fill-mode: forwards;
@@ -42,7 +47,7 @@
             }
 
             to {
-                transform: rotate(-225deg);
+                transform: rotate(180deg);
             }
         }
     </style>
@@ -59,9 +64,9 @@
             <li>메뉴3</li>
             <li>메뉴4</li>
         </ul>
-        <div class="">
+        <div class="btn_box">
             <button>
-
+                <i class="fa-solid fa-xmark"></i>
             </button>
         </div>
     </header>

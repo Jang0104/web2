@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        button {
+            margin: 50px auto;
+            display: block;
+            padding: 16px 24px;
+            font-size: 24px0;
+            border: none;
+            background: rgb(162, 162, 255);
+            color: #fff;
+            border-radius: 16px;
+            cursor: pointer;
+            box-shadow: 5px 10px 10px #dedede;
+        }
+
+        ul {
+            display: flex;
+            width: 1200px;
+            overflow: hidden;
+            list-style: none;
+            margin: 0 auto;
+        }
+
+        li {
+            min-width: 260px;
+            height: 150px;
+            margin: 0 16px;
+        }
+
+        button:focus+ul li {
+            animation: slide 5s forwards;
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+        li:nth-child(1) {
+            background: url(1.webp);
+            background-size: cover;
+        }
+
+        li:nth-child(2) {
+            background: url(2.webp);
+            background-size: cover;
+        }
+
+        li:nth-child(3) {
+            background: url(3.webp);
+            background-size: cover;
+        }
+
+        li:nth-child(4) {
+            background: url(4.webp);
+            background-size: cover;
+        }
+
+        li:nth-child(5) {
+            background: url(5.webp);
+            background-size: cover;
+        }
+
+        li:nth-child(6) {
+            background: url(6.webp);
+            background-size: cover;
+        }
+
+        @keyframes slide {
+            20% {
+                transform: translateX(0);
+            }
+
+            100 {
+                transform: translateX(-1200px)
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <button>
+            동물이 지나가용
+        </button>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+</body>
+
+</html>
