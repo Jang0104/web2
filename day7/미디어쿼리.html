@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>미디어쿼리</title>
     <style>
         .pc_media {
             width: 300px;
@@ -11,7 +12,7 @@
             background: yellowgreen;
         }
 
-        @media(max-width: 1024px){
+        @media(max-width: 1024px) {
             .pc_media {
                 width: 100%;
             }
@@ -21,9 +22,10 @@
             }
         }
 
-        @media(max-width: 760px){
+        @media(max-width: 760px) {
             .pc_media {
                 width: 50%;
+                background: yellowgreen;
             }
 
             body {
@@ -33,16 +35,17 @@
 
         @media(min-width: 360px) and (max-width: 760px) {
             .pc_media {
-              background: pink;  
+                background: rgb(200, 50, 205);
+                /* width: 24px; */
             }
-            
         }
-
-
     </style>
 </head>
+
 <body>
     <div class="pc_media"></div>
     <div class="mo_media"></div>
+    <!-- <div class="pc_media"></div> -->
 </body>
+
 </html>
